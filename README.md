@@ -6,7 +6,7 @@
 
 I took a snapshot with OpenCV. I converted the image from "Bgr" to "Rgb" with the OpenCV function. Then I converted the image into "CIELAB", "CIELCh" color space using the ```rgb2lab```, ```lab2lch``` functions of the ```skimage.color``` module.
 I assigned the values of the "Reference Lab" and "Lab" to "lab reference" and "lab" with the ```LabColor``` function of the ```colormath.color.objects``` module.
- In this way, I calculated Delta_E with ```delta_e_cie1976```, ```delta_e_cie1994```, ```delta_e_cie2000```, ```delta_e_cmc``` functions of ```colormath.color_diff``` module.
+In this way, I calculated Delta E with ```delta_e_cie1976```, ```delta_e_cie1994```, ```delta_e_cie2000```, ```delta_e_cmc``` functions of ```colormath.color_diff``` module.
 In "LAB", "LCH" and "RGB" calculation, I first averaged all the pixels of the images.
 Then I calculated the difference by subtracting the measured value from the reference value.
 I placed these operations on the interface with PyQt5.

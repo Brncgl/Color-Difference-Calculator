@@ -1,4 +1,4 @@
-# Color_Difference_Calculator
+# Color-Difference-Calculator
 
 <p align="center">
   <img src="test_image/ColorDif.png" alt="test_image/ColorDif.png" width="800" />
